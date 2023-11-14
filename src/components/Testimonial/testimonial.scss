@@ -1,0 +1,24 @@
+@import '@theme/viewport.scss';
+.testimonial {
+    padding: 2rem 4rem;
+    @include tablet {
+        padding: 2rem 3rem;
+    }
+    @include mobile {
+        padding: 2rem 1rem;
+    }
+    background-color: #e6f4f1;
+    h2 {
+        font-weight: 600;
+    }
+    .testimonial-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 2rem;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+}

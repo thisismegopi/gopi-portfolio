@@ -24,6 +24,7 @@
             background-color: #fff;
             position: relative;
             border: 0.125rem solid #000;
+            box-shadow: 4px 4px #000;
 
             @include mobile {
                 padding: 0.625rem 0.9375rem;
@@ -126,7 +127,7 @@
         top: 0;
         left: 50%;
         margin-left: -0.1875rem;
-        z-index: -1;
+        z-index: 1;
 
         @include tablet {
             left: 1.9375rem;
