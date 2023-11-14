@@ -1,0 +1,51 @@
+@import '@theme/colors.module.scss';
+@import '@theme/fonts.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'ClashDisplay' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $B0;
+    svg {
+        overflow: inherit;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.layout {
+    z-index: 2;
+    .main-container {
+        min-height: calc(100vh - ($header-height-desktop + $banner-height));
+    }
+}
+
+input,
+button,
+submit {
+    border: none;
+}
+
+.details-modal-overlay {
+    z-index: 1000;
+    background: $SemiTransparentBlack !important;
+}
