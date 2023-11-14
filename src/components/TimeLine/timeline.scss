@@ -1,0 +1,135 @@
+@import '@theme/viewport.scss';
+.timeline {
+    position: relative;
+    max-width: 75rem;
+    margin: 6.25rem auto;
+
+    @include tablet {
+        margin: 3.125rem auto;
+    }
+
+    .timeline-container {
+        padding: 0.625rem 3.125rem;
+        position: relative;
+        width: 50%;
+
+        @include tablet {
+            width: 100%;
+            padding-left: 5rem;
+            padding-right: 1.5625rem;
+        }
+
+        .text-box {
+            padding: 1.25rem 1.875rem;
+            background-color: #fff;
+            position: relative;
+            border: 0.125rem solid #000;
+
+            @include mobile {
+                padding: 0.625rem 0.9375rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+
+                @include mobile {
+                    font-size: 1.2rem;
+                }
+            }
+            small {
+                display: inline-block;
+                margin-bottom: 0.9375rem;
+            }
+            h4 {
+                font-weight: 500;
+            }
+
+            .left-arrow {
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 1.75rem;
+                z-index: 1;
+                border-top: 0.9375rem solid transparent;
+                border-bottom: 0.9375rem solid transparent;
+                border-left: 0.9375rem solid #000;
+                right: -0.9375rem;
+
+                @include tablet {
+                    border-right: 0.9375rem solid #000;
+                    border-left: 0;
+                    left: -0.9375rem;
+                }
+            }
+
+            .right-arrow {
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 1.75rem;
+                z-index: 1;
+                border-top: 0.9375rem solid transparent;
+                border-bottom: 0.9375rem solid transparent;
+                border-right: 0.9375rem solid #000;
+                left: -0.9375rem;
+
+                @include tablet {
+                    border-right: 0.9375rem solid #000;
+                    border-left: 0;
+                    left: -0.9375rem;
+                }
+            }
+        }
+
+        &.left {
+            left: 0;
+        }
+
+        &.right {
+            left: 50%;
+
+            .org-logo {
+                left: -1.25rem;
+            }
+
+            @include tablet {
+                left: 0;
+            }
+        }
+
+        .org-logo {
+            position: absolute;
+            width: 2.5rem;
+            height: auto;
+            border-radius: 50%;
+            right: -1.25rem;
+            top: 2rem;
+            z-index: 10;
+            border: 0.125rem solid #000;
+        }
+
+        @include tablet {
+            &.left .org-logo,
+            &.right .org-logo {
+                left: 0.625rem;
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0.125rem;
+        height: 100%;
+        background-color: #000;
+        top: 0;
+        left: 50%;
+        margin-left: -0.1875rem;
+        z-index: -1;
+
+        @include tablet {
+            left: 1.9375rem;
+        }
+    }
+}

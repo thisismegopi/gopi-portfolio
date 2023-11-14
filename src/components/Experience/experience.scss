@@ -1,0 +1,15 @@
+@import '@theme/viewport.scss';
+.experience {
+    padding: 2rem;
+
+    @include mobile {
+        padding: 0.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
