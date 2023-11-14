@@ -1,6 +1,7 @@
 @import '@theme/viewport.scss';
 .experience {
     padding: 2rem;
+    border-bottom: 2px solid #000;
 
     @include mobile {
         padding: 0.3rem;

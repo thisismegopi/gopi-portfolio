@@ -1,0 +1,31 @@
+@import '@theme/viewport.scss';
+.skills {
+    padding: 2rem;
+    border-bottom: 2px solid #000;
+    background-color: #e7e9fe;
+
+    @include mobile {
+        padding: 2rem 0.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .skill-group {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
