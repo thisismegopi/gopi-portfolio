@@ -21,9 +21,14 @@ body {
 }
 
 body {
-    background-color: $B0;
+    padding: 3rem 4rem;
+    background-color: #f8eeec;
     svg {
         overflow: inherit;
+    }
+
+    @include mobile {
+        padding: 1.125rem;
     }
 }
 
@@ -33,10 +38,10 @@ a {
 }
 
 .layout {
-    z-index: 2;
-    .main-container {
-        min-height: calc(100vh - ($header-height-desktop + $banner-height));
-    }
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
 }
 
 input,
