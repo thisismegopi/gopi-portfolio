@@ -6,12 +6,13 @@ type LinkButtonProps = {
     link: string;
     buttonEle: string | JSX.Element;
     buttonStyle: CSSProperties;
+    scroll?: boolean;
 };
 
-export const LinkButton: FC<LinkButtonProps> = ({ buttonEle, link, buttonStyle }) => {
+export const LinkButton: FC<LinkButtonProps> = ({ buttonEle, link, buttonStyle, scroll }) => {
     const isIcon = typeof buttonEle !== 'string';
     return (
-        <Link className={`link-button ${isIcon && 'icon'}`} href={link} style={buttonStyle}>
+        <Link scroll={scroll} className={`link-button ${isIcon && 'icon'}`} href={link} style={buttonStyle}>
             {typeof buttonEle === 'string' ? buttonEle : buttonEle}
         </Link>
     );
