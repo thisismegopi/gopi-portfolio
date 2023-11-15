@@ -1,3 +1,4 @@
+import { ContactMe } from '@/components/ContactMe';
 import { Experience } from '@/components/Experience';
 import { Hero } from '@/components/Hero';
 import { NavBar } from '@/components/NavBar';
@@ -15,6 +16,7 @@ export default function Home() {
             <Projects />
             <Skils />
             <Testimonial />
+            <ContactMe />
         </React.Fragment>
     );
 }

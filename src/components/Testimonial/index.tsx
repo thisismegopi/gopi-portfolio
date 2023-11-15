@@ -5,7 +5,8 @@ import React from 'react';
 
 export const Testimonial = () => {
     return (
-        <section className="testimonial">
+        <section className="testimonial" id="testimonial">
+            <h2>Testimonials</h2>
             <div className="testimonial-items">
                 <TestimonialCard {...testimonialDataMap[TestimonialName.Alex]} />
                 <TestimonialCard {...testimonialDataMap[TestimonialName.Shankar]} />

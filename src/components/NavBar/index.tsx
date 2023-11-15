@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import './navBar.scss';
+
+import Link from 'next/link';
 import React from 'react';
 
 export const NavBar = () => {
@@ -8,14 +9,15 @@ export const NavBar = () => {
             <div className="nav-container">
                 <div className="nav-left">
                     <Link href={'/'}>
-                        <h1>Gopi&rsquo;s Portfolio</h1>
+                        <span>Gopi&rsquo;s Portfolio</span>
                     </Link>
                 </div>
                 <div className="nav-right">
-                    <Link href={'/'}>About</Link>
-                    <Link href={'/'}>Work</Link>
-                    <Link href={'/'}>Skill</Link>
-                    <Link href={'/'}>Contact</Link>
+                    <Link href={'#experience'}>Experience</Link>
+                    <Link href={'#projects'}>Projects</Link>
+                    <Link href={'#skills'}>Skills</Link>
+                    <Link href={'#testimonial'}>Testimonial</Link>
+                    <Link href={'#contact'}>Contact</Link>
                 </div>
             </div>
         </section>

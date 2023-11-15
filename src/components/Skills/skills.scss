@@ -12,6 +12,11 @@
         font-size: 2rem;
         font-weight: 600;
         letter-spacing: 2px;
+        margin-bottom: 1rem;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     h3 {

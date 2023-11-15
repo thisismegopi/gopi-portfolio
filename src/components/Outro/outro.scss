@@ -1,0 +1,17 @@
+.outro {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.4rem;
+
+        span a {
+            text-decoration: underline;
+        }
+    }
+}

@@ -17,8 +17,9 @@
         }
 
         .nav-left {
-            h1 {
+            span {
                 font-size: 2rem;
+                font-weight: 500;
                 @include tablet {
                     text-align: center;
                 }

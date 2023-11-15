@@ -6,7 +6,7 @@ import React from 'react';
 
 export const Projects = () => {
     return (
-        <section className="projects">
+        <section className="projects" id="projects">
             <h2>Projects Worked</h2>
             <div className="project-list">
                 {Object.values(projectDataMap).map((projects, index) => (

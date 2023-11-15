@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.scss';
+import Outro from '@/components/Outro';
 
 export const metadata: Metadata = {
     title: "Gopi's Portfolio",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body>
                 <main className="layout">{children}</main>
+                <Outro />
             </body>
         </html>
     );

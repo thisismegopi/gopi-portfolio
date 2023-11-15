@@ -18,10 +18,10 @@ export const Hero = () => {
                     </h2>
                     <div className="button-wrapper">
                         <div style={{ marginTop: '1rem' }}>
-                            <LinkButton buttonEle="Contact Me" link="/" buttonStyle={{ backgroundColor: '#d7f1c2' }} />
+                            <LinkButton buttonEle="Contact Me" link="#contact" buttonStyle={{ backgroundColor: '#d7f1c2' }} />
                         </div>
                         <div style={{ marginTop: '1rem' }}>
-                            <LinkButton buttonEle="See my Resume" link="/" buttonStyle={{ backgroundColor: '#d7f1c2' }} />
+                            <LinkButton buttonEle="See my Resume" link="/docs/gopi-resume-wm.pdf" buttonStyle={{ backgroundColor: '#d7f1c2' }} />
                         </div>
                     </div>
                 </div>

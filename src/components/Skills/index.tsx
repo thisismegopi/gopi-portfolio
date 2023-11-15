@@ -6,7 +6,7 @@ import { IoLogoJavascript } from 'react-icons/io5';
 
 export const Skils = () => {
     return (
-        <section className="skills">
+        <section className="skills" id="skills">
             <h2>Skills</h2>
             <h3>Front End</h3>
             <div className="skill-group">

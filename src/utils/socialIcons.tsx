@@ -7,14 +7,14 @@ type SocialIcon = {
 export const SOCIAL_ICONS: SocialIcon[] = [
     {
         icon: <FaLinkedin />,
-        link: '#',
+        link: 'https://www.linkedin.com/in/gopi-n-dev/',
     },
     {
         icon: <FaGithub />,
-        link: '#',
+        link: 'https://github.com/thisismegopi',
     },
     {
         icon: <FaInstagram />,
-        link: '#',
+        link: 'https://www.instagram.com/thisismegopi/',
     },
 ];
