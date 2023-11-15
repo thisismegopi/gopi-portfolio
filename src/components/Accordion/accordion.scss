@@ -1,0 +1,56 @@
+@import '@theme/viewport.scss';
+
+.accordion {
+    background-color: #fff;
+    border: 2px solid #000;
+
+    &.shadow {
+        box-shadow: 4px 4px #000;
+    }
+
+    &.top-border-only {
+        border-style: solid none none none;
+    }
+
+    label {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+
+        @include mobile {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+
+    input[type='radio'] {
+        display: none;
+    }
+
+    input[type='radio']:checked + .content {
+        height: auto;
+        &.has-padding {
+            padding: 0 1rem 1rem 1rem;
+            @include mobile {
+                padding: 0 0.5rem 0.5rem 0.5rem;
+            }
+        }
+    }
+
+    .content {
+        height: 0;
+        overflow: hidden;
+        // transition: max-height 0.5s;
+
+        p {
+            font-size: 1rem;
+            @include mobile {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

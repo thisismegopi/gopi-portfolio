@@ -1,21 +1,27 @@
 @import '@theme/viewport.scss';
-.experience {
+.projects {
     padding: 2rem;
-    background-color: #f8eeec;
     border-bottom: 2px solid #000;
+    background-color: #ffe2e3;
 
     @include mobile {
-        padding: 1rem 0.3rem;
+        padding: 1rem;
     }
 
     h2 {
         font-size: 2rem;
         font-weight: 600;
         letter-spacing: 2px;
+        margin-bottom: 1rem;
 
         @include mobile {
-            padding-left: 0.7rem;
             font-size: 1.2rem;
         }
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }

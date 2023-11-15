@@ -1,0 +1,40 @@
+@import '@theme/viewport.scss';
+
+.project-label {
+    display: flex;
+    align-items: center;
+    > img {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #000;
+        border-radius: 50%;
+
+        @include mobile {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .label-content {
+        margin-left: 1rem;
+
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+            @include mobile {
+                font-size: 0.9rem;
+            }
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+}
