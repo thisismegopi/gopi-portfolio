@@ -14,7 +14,6 @@ export enum SkillGroup {
     FrontEnd = 'FrontEnd',
     BackEnd = 'BackEnd',
     Frameworks = 'Frameworks',
-    OperatindSystem = 'OperatingSystem',
 }
 
 export const skillDataMap: Record<SkillGroup, SkillsData[]> = {
@@ -46,5 +45,4 @@ export const skillDataMap: Record<SkillGroup, SkillsData[]> = {
         { icon: <FaBootstrap />, title: 'Bootstrap' },
         { icon: <SiTailwindcss />, title: 'Tailwind' },
     ],
-    [SkillGroup.OperatindSystem]: [{ icon: TiHtml5, title: 'HTML5' }],
 };
