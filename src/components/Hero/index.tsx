@@ -13,7 +13,7 @@ export const Hero = () => {
                 <div className="hero-left">
                     <h1>-Hello, I&rsquo;m Gopi 👋🏻</h1>
                     <h2>
-                        A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool
+                        A passionate Software Developer 🚀 having 3 years of experience in building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool
                         libraries and frameworks.
                     </h2>
                     <div className="button-wrapper">
