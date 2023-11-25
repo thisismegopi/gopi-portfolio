@@ -12,7 +12,7 @@ export const ContactMe = () => {
             <p>
                 Write an email to{' '}
                 <span>
-                    <Link href="mailto:gopin-careers@gmail.com">gopin-careers@gmail.com</Link>
+                    <Link href="mailto:gopin.careers@gmail.com">gopin.careers@gmail.com</Link>
                 </span>
             </p>
 
